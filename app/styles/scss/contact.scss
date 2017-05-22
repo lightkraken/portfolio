@@ -1,0 +1,138 @@
+@import "colors.scss";
+
+.contact {
+  background-color: $color-5;
+}
+
+  .contact__section-label {
+    margin-bottom: 150px;
+    color: $color-3;
+  }
+
+  .contact__inner {
+    display: flex;
+    justify-content: space-around;
+    max-width: 865px;
+  }
+
+.contact-item {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 220px;
+  margin-left: -14px;
+
+  background-color: white;
+
+  &::before, &::after {
+    position: absolute;
+    display: block;
+    content: '';
+  }
+
+  &::before {
+    top: -7px;
+    right: -14px;
+
+    height: 100%;
+    width: 14px;
+    background: $color-3;
+
+    transform: skewY(-45deg);
+  }
+
+  &::after {
+    top: -14px;
+    left: 7px;
+
+    height: 14px;
+    width: 100%;
+    background: $color-3;
+
+    transform: skewX(-45deg);
+  }
+}
+
+.contact-item__top {
+  display: flex;
+  align-items: flex-end;
+  height: 156px;
+  padding-bottom: 27px;
+}
+
+.contact-item__bottom {
+  display: flex;
+  justify-content: center;
+  height: 64px;
+}
+
+.contact-item__img {
+  display: block;
+}
+
+.contact-item__img--mail {
+  width: 114px;
+}
+
+.contact-item__img--linkedin {
+  width: 86px;
+}
+
+.contact-cta {
+  width: 150px;
+  height: 42px;
+
+  color: $light-color;
+  background-color: $color-10;
+
+  font-family: Montserrat, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+
+  transition: 0.3s background-color;
+
+    &:hover {
+      background-color: darken($color-10, 7%);
+    }
+}
+
+.contact-cta__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.email-wizard {
+  position: absolute;
+  bottom: -12px;
+  left: -21px;
+  z-index: 5;
+
+  width: 66px;
+  height: 90px;
+
+  background-image: url("../../images/poke.png");
+
+  animation: email-wizard 0.4s steps(4) infinite alternate,
+}
+@keyframes email-wizard {
+  100% {background-position: -264px;}
+}
+
+@media (max-width: 645px) {
+  .contact__inner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .contact-item:first-of-type {
+    margin-bottom: 90px;
+  }
+}

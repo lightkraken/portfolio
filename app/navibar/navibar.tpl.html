@@ -1,0 +1,17 @@
+<div class="navibar">
+  <div class="navibar__logo" ng-click="scrollToSection('#top')">JB</div>
+  <div class="navibar__items">
+    <div class="navibar-item navibar-item--about" ng-click="scrollToSection('#about')">ABOUT</div>
+    <div class="navibar-item navibar-item--portfolio" ng-click="scrollToSection('#portfolio')">PORTFOLIO</div>
+    <div class="navibar-item navibar-item--contact" ng-click="scrollToSection('#contact')">CONTACT</div>
+    <div class="navibar__bumper"></div>
+  </div>
+  <div uib-dropdown class="navibar-hamburger">
+    <div uib-dropdown-toggle class="navibar-hamburger__icon">&#9776;</div>
+    <ul uib-dropdown-menu class="navibar-hamburger__dropdown-menu">
+      <li class="navibar-item navibar-item--about navibar-item--mobile" ng-click="scrollToSection('#about')">ABOUT</li>
+      <li class="navibar-item navibar-item--portfolio navibar-item--mobile" ng-click="scrollToSection('#portfolio')">PORTFOLIO</li>
+      <li class="navibar-item navibar-item--contact navibar-item--mobile" ng-click="scrollToSection('#contact')">CONTACT</li>
+    </ul>
+  </div>
+</div>

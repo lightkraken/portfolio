@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Joshua Behan - Front-End Web Developer</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" href="bower_components/bootstrap-css-only/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/css/reset.css">
+    <link rel="stylesheet" href="styles/css/common.css">
+    <link rel="stylesheet" href="styles/css/navibar.css">
+    <link rel="stylesheet" href="styles/css/top.css">
+    <link rel="stylesheet" href="styles/css/about.css">
+    <link rel="stylesheet" href="styles/css/skills.css">
+    <link rel="stylesheet" href="styles/css/tools.css">
+    <link rel="stylesheet" href="styles/css/portfolio.css">
+    <link rel="stylesheet" href="styles/css/contact.css">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-54385001-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body ng-app="portfolio">
+
+    <navibar></navibar>
+
+    <div class="section top" id="top">
+      <div class="top__bumper"></div>
+      <div class="top__hero-area">
+        <div class="hero">
+          <div class="hero__name">Joshua<span class="hero__name-space">&nbsp;</span><br class="hero__name-break"/>Behan</div>
+          <div class="hero-box">
+            <div class="hero-box__title">Front-End<br/>Web Developer</div>
+            <div class="top-wizard"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section about" id="about">
+      <div class="section-label about__section-label">
+        ABOUT
+      </div>
+      <div class="section__inner about__inner">
+        <img class="about-photo" src="images/portrait.png">
+        <div class="about-blurb">
+          Hello! I’m Joshua Behan - front-end developer / CSS wizard / JavaScript sorcerer / Angular thaumaturge / HTML enchanter. I also enjoy web design, and I love to create thoughtful user interfaces and user experiences.
+        </div>
+      </div>
+    </div>
+
+    <div class="section skills" id="about-skills">
+      <div class="subsection-label">
+        SKILLS
+      </div>
+      <div class="section__inner skills__inner">
+        <div class="skill">
+          <div class="skill__icon-container">
+            <img class="skill__icon skill__icon--dev" src="images/dev.svg"/>
+            <div>
+              <div class="skill-wizard"></div>
+              <div class="skill-wizard skill-wizard--reversed skill-wizard--delayed"></div>
+            </div>
+          </div>
+          <div class="skill__title">Development</div>
+          <div class="skill__desc">Building interactive websites using the latest technology</div>
+        </div>
+        <div class="skill">
+          <div class="skill__icon-container">
+            <img class="skill__icon skill__icon--design" src="images/design.svg"/>
+          </div>
+          <div class="skill__title">Web Design</div>
+          <div class="skill__desc">User interfaces that are friendly and intuitive</div>
+        </div>
+        <div class="skill">
+          <div class="skill__icon-container">
+            <img class="skill__icon skill__icon--responsive" src="images/responsive.svg"/>
+          </div>
+          <div class="skill__title">Responsive Design</div>
+          <div class="skill__desc">Websites that look great on every device and screen size</div>
+        </div>
+        <div class="skill">
+          <div class="skill__icon-container">
+            <img class="skill__icon skill__icon--ideas" src="images/ideas.svg"/>
+          </div>
+          <div class="skill__title">Ideas & Solutions</div>
+          <div class="skill__desc">Brainstorming ideas and solutions </div>
+        </div>
+        <div class="skill">
+          <div class="skill__icon-container">
+            <img class="skill__icon skill__icon--communication" src="images/communication.svg"/>
+          </div>
+          <div class="skill__title">Communication</div>
+          <div class="skill__desc">Clear and open communication</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section tools" id="about-tools">
+      <div class="subsection-label">
+        MY FAVORITE<br/>TOOLS
+      </div>
+      <div class="section__inner tools__inner">
+        <div class="tools__box">
+
+          <div class="tools__row">
+            <div class="tool-brick tool-brick--top">
+              <div class="tool">
+                <div class="tool-wizard">
+                  <div class="tool-wizard__inner-1">
+                    <div class="tool-wizard__inner-2"></div>
+                  </div>
+                </div>
+                <img class="tool__icon" src="images/html.svg"/>
+                <div class="tool__label">HTML5</div>
+              </div>
+              <div class="tool">
+                <img class="tool__icon" src="images/css.svg"/>
+                <div class="tool__label">CSS3</div>
+              </div>
+              <div class="tool">
+                <img class="tool__icon" src="images/js.svg"/>
+                <div class="tool__label tool__label">JavaScript</div>
+              </div>
+            </div>
+          </div>
+          <div class="tools__row">
+            <div class="tool-brick">
+              <div class="tool tool--angular">
+                <img class="tool__icon" src="images/angularjs.svg"/>
+                <div class="tool__label">AngularJS</div>
+              </div>
+            </div>
+            <div class="tool-brick">
+              <div class="tool">
+                <img class="tool__icon" src="images/sass.svg"/>
+                <div class="tool__label">Sass</div>
+              </div>
+              <div class="tool">
+                <img class="tool__icon tool__icon--bem" src="images/bem.svg"/>
+                <div class="tool__label">BEM</div>
+              </div>
+            </div>
+            <div class="tool-brick">
+              <div class="tool">
+                <img class="tool__icon" src="images/gulp.svg"/>
+                <div class="tool__label">Gulp</div>
+              </div>
+            </div>
+          </div>
+          <div class="tools__row">
+            <div class="tool-brick">
+              <div class="tool">
+                <img class="tool__icon" src="images/bower.svg">
+                <div class="tool__label">Bower</div>
+              </div>
+            </div>
+            <div class="tool-brick">
+              <div class="tool">
+                <img class="tool__icon" src="images/atom.svg"/>
+                <div class="tool__label">Atom</div>
+              </div>
+              <div class="tool">
+                <img class="tool__icon" src="images/sketch.svg"/>
+                <div class="tool__label">Sketch</div>
+              </div>
+            </div>
+            <div class="tool-brick">
+              <div class="tool">
+                <img class="tool__icon" src="images/git.svg"/>
+                <div class="tool__label">Git</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tools__row tools__row--mobile">
+            <div class="tool-brick tool-brick--top">
+              <div class="tool">
+                <div class="tool-wizard tool-wizard--mobile">
+                  <div class="tool-wizard__inner-1">
+                    <div class="tool-wizard__inner-2"></div>
+                  </div>
+                </div>
+                <img class="tool__icon" src="images/html.svg"/>
+                <div class="tool__label">HTML</div>
+              </div>
+              <div class="tool">
+                <img class="tool__icon" src="images/css.svg"/>
+                <div class="tool__label">CSS</div>
+              </div>
+              <div class="tool">
+                <img class="tool__icon" src="images/js.svg"/>
+                <div class="tool__label">JS</div>
+              </div>
+            </div>
+          </div>
+          <div class="tools__row tools__row--mobile">
+            <div class="tool-brick tool-brick--angular-mobile">
+              <div class="tool tool--angular">
+                <img class="tool__icon" src="images/angularjs.svg"/>
+                <div class="tool__label">Angular</div>
+              </div>
+            </div>
+            <div class="tool-brick">
+              <div class="tool">
+                <img class="tool__icon" src="images/sass.svg"/>
+                <div class="tool__label">Sass</div>
+              </div>
+              <div class="tool">
+                <img class="tool__icon tool__icon--bem" src="images/bem.svg"/>
+                <div class="tool__label">BEM</div>
+              </div>
+            </div>
+          </div>
+          <div class="tools__row tools__row--mobile">
+            <div class="tool-brick tool-brick--third-row-mobile">
+              <div class="tool">
+                <img class="tool__icon" src="images/gulp.svg"/>
+                <div class="tool__label">Gulp</div>
+              </div>
+            </div>
+            <div class="tool-brick tool-brick--third-row-mobile">
+              <div class="tool">
+                <img class="tool__icon" src="images/bower.svg">
+                <div class="tool__label">Bower</div>
+              </div>
+            </div>
+            <div class="tool-brick tool-brick--third-row-mobile">
+              <div class="tool">
+                <img class="tool__icon" src="images/git.svg"/>
+                <div class="tool__label">Git</div>
+              </div>
+            </div>
+          </div>
+          <div class="tools__row tools__row--mobile">
+            <div class="tool-brick tool-brick--bottom-mobile">
+              <div class="tool">
+                <img class="tool__icon" src="images/atom.svg"/>
+                <div class="tool__label">Atom</div>
+              </div>
+            </div>
+            <div class="tool-brick tool-brick--bottom-mobile">
+              <div class="tool">
+                <img class="tool__icon" src="images/sketch.svg"/>
+                <div class="tool__label">Sketch</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="section portfolio" id="portfolio">
+      <div class="section-label portfolio__section-label">
+        PORTFOLIO
+      </div>
+      <div class="section__inner portfolio__inner">
+
+        <div class="card">
+          <img class="card__img" src="images/vendingmachine.png"/>
+          <img class="card__img--mobile" src="images/vendingmachine2.png">
+          <div class="card__text">
+            <div class="card__title">Vending Machine</div>
+            <div class="card__description">
+              <p>A virtual vending machine. An exercise in test-driven delevopment, based on <a class="card__link" href="https://github.com/guyroyse/vending-machine-kata" target="_blank">this coding exercise</a>.</p>
+              <p>AngularJS</p>
+            </div>
+            <div class="card__cta">
+              <div class="card-cta-button">
+                <a class="card-cta-button__link" href="https://github.com/lightkraken/vending-machine" target="_blank">Github</a>
+              </div>
+              <div class="card-cta-button">
+                <a class="card-cta-button__link" href="http://www.squintyjosh.com/vending-machine" target="_blank">Visit Site</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="card__img" src="images/portfolio1.png"/>
+          <img class="card__img--mobile" src="images/portfolio2.png">
+          <div class="card__text">
+            <div class="card__title">Portfolio</div>
+            <div class="card__description">
+              <p>This website! Design inspired by <a class="card__link" href="https://dribbble.com/shots/3276804-Bottle-Logic-Week-of-Logic-Banner" target="_blank">this poster.</a></p>
+              <p>AngularJS</p>
+            </div>
+            <div class="card__cta">
+              <div class="card-cta-button">
+                <a class="card-cta-button__link" href="https://github.com/lightkraken/portfolio" target="_blank">Github</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="card__img" src="images/books.jpg"/>
+          <img class="card__img--mobile" src="images/books2.jpg">
+          <div class="card__text">
+            <div class="card__title">Favorite Books</div>
+            <div class="card__description">
+              <p>A website of my favorite books. This website combines two of my favorite hobbies: reading and programming. It's a place for me to experiment with code, design, and UI.</p>
+              <p>AngularJS</p>
+            </div>
+            <div class="card__cta">
+              <div class="card-cta-button">
+                <a class="card-cta-button__link" href="https://github.com/lightkraken/books" target="_blank">Github</a>
+              </div>
+              <div class="card-cta-button">
+                <a class="card-cta-button__link" href="http://www.squintyjosh.com/favorite-books/" target="_blank">Visit Site</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="card__img" src="images/pizza.png"/>
+          <img class="card__img--mobile" src="images/pizza2.png"/>
+          <div class="card__text">
+            <div class="card__title">Cosmic Pizza</div>
+            <div class="card__description">
+              <p>A retro-futuristic sci-fi pizza franchise, selling space-themed pizzas for home delivery.</p>
+              <p>Created during a 48 hour coding challenge.</p>
+              <p>JavaScript, canvas</p>
+            </div>
+            <div class="card__cta">
+              <div class="card-cta-button">
+                <a class="card-cta-button__link" href="https://github.com/lightkraken/pizza" target="_blank">Github</a>
+              </div>
+              <div class="card-cta-button">
+                <a class="card-cta-button__link" href="http://www.squintyjosh.com/pizza/" target="_blank">Visit Site</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="card__img" src="images/so.png"/>
+          <img class="card__img--mobile" src="images/so2.png"/>
+          <div class="card__text">
+            <div class="card__title">Space Owl</div>
+            <div class="card__description">
+              <p>A vision therapy game for children with binocular vision disorders. This was the first web app I ever wrote, but it's still used by vision therapy patients around the world. I maintain it for them :)</p>
+              <p>JavaScript, canvas</p>
+            </div>
+            <div class="card__cta">
+              <div class="card-cta-button">
+                <a class="card-cta-button__link" href="https://github.com/lightkraken/SpaceOwl" target="_blank">Github</a>
+              </div>
+              <div class="card-cta-button">
+                <a class="card-cta-button__link" href="http://www.squintyjosh.com/spaceowl/" target="_blank">Visit Site</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="card__img" src="images/spellingbee.png"/>
+          <img class="card__img--mobile" src="images/spellingbee2.png"/>
+          <div class="card__text">
+            <div class="card__title">Spelling Bee</div>
+            <div class="card__description">
+              <p>A vision therapy game to improve binocular tracking. Uses D3 to display a <a class="card__link" target="_blank" href="https://github.com/d3/d3-hexbin">hexbin scatterplot</a> of game data, allowing the user to see which areas they have trouble tracking in.</p>
+              <p>JavaScript, D3.js, canvas</p>
+            </div>
+            <div class="card__cta">
+              <div class="card-cta-button">
+                <a class="card-cta-button__link" href="https://github.com/lightkraken/spellingbee" target="_blank">Github</a>
+              </div>
+              <div class="card-cta-button">
+                <a class="card-cta-button__link" href="http://www.squintyjosh.com/spellingbee/" target="_blank">Visit Site</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card--reader">
+          <img class="card__img" src="images/vtr.png"/>
+          <img class="card__img--mobile" src="images/vtr2.png"/>
+          <div class="card__text">
+            <div class="card__title">Vision Therapy Reader</div>
+            <div class="card__description">
+              <p>A vision therapy desktop reading app, useful for improving binocular reading ability. Users load text into the app, and read using anaglyph glasses.</p>
+              <p>Python</p>
+            </div>
+            <div class="card__cta">
+              <div class="card-cta-button">
+                <a class="card-cta-button__link" href="https://github.com/lightkraken/visiontherapyreader" target="_blank">Github</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="section contact" id="contact">
+      <div class="section-label contact__section-label">
+        CONTACT
+      </div>
+      <div class="section__inner contact__inner">
+        <div class="contact-item">
+          <div class="email-wizard"></div>
+          <div class="contact-item__top">
+            <img class="contact-item__img contact-item__img--mail" src="images/mail.svg">
+          </div>
+          <div class="contact-item__bottom">
+            <div class="contact-cta">
+              <a class="contact-cta__link" href="mailto:joshua.behan@gmail.com">
+                Email me!
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item__top">
+            <img class="contact-item__img contact-item__img--linkedin" src="images/linkedin.svg">
+          </div>
+          <div class="contact-item__bottom">
+            <div class="contact-cta">
+              <a class="contact-cta__link" href="https://www.linkedin.com/in/joshua-behan-960487b4/" target="_blank">Check me out!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js">
+
+    </script>
+    <script src="app.js"></script>
+    <script src="navibar/module.js"></script>
+    <script src="navibar/navibar.directive.js"></script>
+  </body>
+</html>

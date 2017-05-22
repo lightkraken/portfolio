@@ -1,0 +1,47 @@
+@import "colors.scss";
+
+.about {
+  background-color: $light-color;
+}
+
+  .about__section-label {
+    color: $color-2;
+    margin-bottom: 150px;
+  }
+
+  .about__inner {
+    display: flex;
+    align-items: center;
+    padding: 0 40px 0 50px;
+  }
+
+.about-blurb {
+  display: flex;
+  padding-left: 50px;
+
+  font-family: Lato, sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.about-photo {
+  display: block;
+  width: 198px;
+}
+
+@media (max-width: 765px) {
+  .about__inner {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .about-blurb {
+    padding: 0 30px 0 50px;
+  }
+
+  .about-photo {
+    width: 60%;
+    max-width: 300px;
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,156 @@
+@import "colors.scss";
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 0;
+}
+
+.section__inner {
+  width: 100%;
+  max-width: 1024px;
+}
+
+.section-label {
+  display: flex;
+  justify-content: center;
+
+  color: $dark-color;
+
+  font-family: Montserrat, sans-serif;
+  font-size: 62px;
+  font-weight: bold;
+
+  position: relative;
+
+  &::before, &::after {
+    position: absolute;
+
+    display: block;
+    width: 50px;
+    height: 50px;
+
+    content: '';
+    opacity: 0.75;
+  }
+
+  &::before {
+    top: -0.51em;
+    right: -1.03em;
+    border-right: 0.1em solid;
+    border-top: 0.1em solid;
+  }
+
+  &::after {
+    bottom: -0.51em;
+    left: -1.03em;
+    border-left: 0.1em solid;
+    border-bottom: 0.1em solid;
+  }
+}
+
+.subsection-label {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  color: $light-color;
+
+  font-family: Montserrat, sans-serif;
+  font-size: 52px;
+  font-weight: bold;
+  text-align: center;
+
+  margin-bottom: 225px;
+}
+
+.subsection-label::after {
+  position: absolute;
+  bottom: -46px;
+  left: calc(50% - 55px);
+
+  height: 6px;
+  width: 110px;
+
+  background-color: rgba($light-color, 0.75);
+
+  content: ' ';
+}
+
+
+@media (max-width: 550px) {
+  .section-label {
+    font-size: 56px;
+  }
+
+  .subsection-label {
+    font-size: 47px;
+
+    &::after {
+      bottom: -41px;
+      left: calc(50% - 49px);
+
+      width: 98px;
+    }
+  }
+}
+
+@media (max-width: 485px) {
+  .section-label {
+    font-size: 50px;
+  }
+
+  .subsection-label {
+    font-size: 42px;
+
+    &::after {
+      bottom: -36px;
+      left: calc(50% - 44px);
+
+      width: 88px;
+      height: 5px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .section-label {
+    font-size: 44px;
+  }
+
+  .subsection-label {
+    font-size: 37px;
+
+    &::after {
+      bottom: -31px;
+      left: calc(50% - 39px);
+
+      width: 78px;
+    }
+  }
+}
+
+@media (max-width: 374px) {
+  .section-label {
+    font-size: 38px;
+  }
+
+  .subsection-label {
+    font-size: 32px;
+
+    .subsection-label {
+      font-size: 37px;
+
+      &::after {
+        bottom: -26px;
+        left: calc(50% - 34px);
+
+        width: 68px;
+        height: 4px;
+      }
+    }
+  }
+}

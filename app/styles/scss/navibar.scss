@@ -1,0 +1,106 @@
+@import "colors.scss";
+
+.navibar {
+  position: fixed;
+  z-index: 100;
+
+  display: flex;
+  justify-content: space-between;;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+
+  background-color: transparent;
+
+  transition: all 0.3s;
+}
+.navibar--scrolled {
+  height: 85px;
+  background-color: $dark-color;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+  .navibar__logo {
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+
+  .navibar__logo {
+    margin-left: 30px;
+    padding: 2px 8px;
+
+    background-color: $light-color;
+    color: $dark-color;
+
+    font-family: Montserrat, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 3px;
+
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .navibar__items {
+    display: flex;
+  }
+
+  .navibar__bumper {
+    width: 65px;
+  }
+
+.navibar-item {
+  margin-left: 36px;
+
+  color: $light-color;
+
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: color 0.3s;
+}
+.navibar-item:hover, .navibar-item--selected {
+  color: $color-6;
+}
+.navibar-item--mobile {
+  margin: 0;
+  padding-bottom: 10px;
+
+  font-size: 26px;
+}
+
+.navibar-hamburger {
+  display: none;
+}
+
+  .navibar-hamburger__icon {
+    margin-right: 0.6em;
+    color: $light-color;
+    font-size: 52px;
+    cursor: pointer;
+  }
+
+  .navibar-hamburger__dropdown-menu {
+    left: -120px;
+
+    width: 200px;
+    padding: 20px 25px 10px 0;
+    border-radius: 0;
+
+    background-color: $dark-color;
+
+    text-align: right;
+  }
+
+@media (max-width: 650px) {
+  .navibar__items {
+    display: none;
+  }
+
+  .navibar-hamburger {
+    display: block;
+  }
+}

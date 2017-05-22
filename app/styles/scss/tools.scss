@@ -1,0 +1,186 @@
+@import "colors.scss";
+
+.tools {
+  background-color: $color-4;
+}
+
+  .tools__inner {
+    display: flex;
+    justify-content: center;
+  }
+
+  .tools__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 685px;
+    margin-left: -11px;
+  }
+
+  .tools__row {
+    display: flex;
+    margin-bottom: 32px;
+  }
+  .tools__row:last-child {
+    margin-bottom: 0;
+  }
+  .tools__row--mobile {
+    display: none;
+  }
+
+.tool-brick {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+  margin-right: 32px;
+  background-color: $light-color;
+
+  &::before, &::after {
+    position: absolute;
+    display: block;
+    content: '';
+  }
+
+  &::before {
+    top: -7px;
+    right: -14px;
+
+    height: 100%;
+    width: 14px;
+    background: $color-3;
+
+    transform: skewY(-45deg);
+  }
+
+  &::after {
+    top: -14px;
+    left: 7px;
+
+    height: 14px;
+    width: 100%;
+    background: $color-3;
+
+    transform: skewX(-45deg);
+  }
+}
+.tool-brick:last-child {
+  margin-right: 0;
+}
+.tool-brick--top {
+  width: 617px;
+  justify-content: space-around;
+}
+
+.tool {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 24px;
+}
+.tool--angular {
+  padding: 15px 11px;
+}
+
+  .tool__icon {
+    display: block;
+    height: 70px;
+    margin: 10px 0 15px;
+  }
+  .tool__icon--bem {
+    height: 66px;
+    margin: 15px 0 14px;
+  }
+
+  .tool__label {
+    color: $dark-color;
+
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+.tool-wizard {
+  position: absolute;
+  top: -94px;
+  left: 10px;
+  z-index: 5;
+
+  animation: tool-wizard-walk 6s linear infinite alternate;
+}
+  .tool-wizard__inner-1 {
+    animation: tool-wizard-flip 12s step-end infinite;
+  }
+
+  .tool-wizard__inner-2 {
+    width: 60px;
+    height: 90px;
+    background-image: url("../../images/walk.png");
+    animation: tool-wizard 1s steps(8) infinite;
+  }
+
+.tool-wizard--mobile {
+  animation: tool-wizard-walk-mobile 3s linear infinite alternate;
+}
+
+  .tool-wizard--mobile .tool-wizard__inner-1 {
+    animation: tool-wizard-flip 6s step-end infinite;
+  }
+
+@keyframes tool-wizard {
+  100% {background-position: -480px;}
+}
+@keyframes tool-wizard-walk {
+  100% {left: 560px;}
+}
+@keyframes tool-wizard-walk-mobile {
+  100% {left: 245px;}
+}
+@keyframes tool-wizard-flip {
+  0% {transform: scaleX(1)}
+  50% {transform: scaleX(-1);}
+}
+
+@media (max-width: 660px) {
+  .tools__row {
+    display: none;
+  }
+  .tools__row--mobile {
+    display: flex;
+  }
+
+  .tool-brick {
+    margin-right: 20px;
+    padding: 0;
+  }
+  .tool-brick--top {
+    width: 290px;
+  }
+  .tool-brick--angular-mobile {
+    width: 99px;
+    box-sizing: border-box;
+  }
+  .tool-brick--third-row-mobile {
+    width: 84px;
+  }
+  .tool-brick--bottom-mobile {
+    width: 136px;
+  }
+
+  .tool {
+    padding: 15px 12px;
+  }
+
+    .tool__icon {
+      height: 50px;
+    }
+    .tool__icon--bem {
+      height: 46px;
+    }
+
+    .tool__label {
+      font-size: 18px;
+    }
+}

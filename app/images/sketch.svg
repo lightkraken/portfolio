@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 393.20596 355.82309"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="sketch.svg"
+   width="393.20596"
+   height="355.82309">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="664"
+     inkscape:window-height="480"
+     id="namedview17"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.4609375"
+     inkscape:cx="197"
+     inkscape:cy="184.82308"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <metadata
+     id="metadata32">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs30" />
+  <g
+     id="g4"
+     style="fill:none;fill-rule:evenodd"
+     transform="translate(-59,-85)">
+    <path
+       d="M 144.79032,96.715155 255.60282,85 366.41532,96.715155 452.20564,211.88108 255.60282,440.82301 59,211.88108 144.79032,96.715155 Z"
+       id="path6"
+       inkscape:connector-curvature="0"
+       style="fill:#fdb300" />
+    <g
+       transform="translate(59,211.88108)"
+       id="g8">
+      <polygon
+         points="79.634,0 196.603,228.942 0,0 "
+         id="polygon10"
+         style="fill:#ea6c00" />
+      <polygon
+         transform="matrix(-1,0,0,1,589.80847,0)"
+         points="276.237,0 393.206,228.942 196.603,0 "
+         id="polygon12"
+         style="fill:#ea6c00" />
+      <polygon
+         points="79.634,0 313.572,0 196.603,228.942 "
+         id="polygon14"
+         style="fill:#fdad00" />
+    </g>
+    <g
+       transform="translate(59,85)"
+       id="g16">
+      <polygon
+         points="196.603,0 85.79,11.715 79.634,126.881 "
+         id="polygon18"
+         style="fill:#fdd231" />
+      <polygon
+         transform="matrix(-1,0,0,1,510.1744,0)"
+         points="313.572,0 202.759,11.715 196.603,126.881 "
+         id="polygon20"
+         style="fill:#fdd231" />
+      <polygon
+         transform="matrix(-1,0,0,1,700.62097,0)"
+         points="307.415,126.881 393.206,11.715 387.049,126.881 "
+         id="polygon22"
+         style="fill:#fdad00" />
+      <polygon
+         points="0,126.881 85.79,11.715 79.634,126.881 "
+         id="polygon24"
+         style="fill:#fdad00" />
+      <polygon
+         points="196.603,0 79.634,126.881 313.572,126.881 "
+         id="polygon26"
+         style="fill:#feeeb7" />
+    </g>
+  </g>
+</svg>

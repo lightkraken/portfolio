@@ -1,0 +1,128 @@
+@import "colors.scss";
+
+.skills {
+  background-color: $color-1;
+}
+
+.skills__inner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: -120px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 330px;
+  height: 335px;
+  margin-top: 105px;
+}
+
+  .skill__icon-container {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 222px;
+    height: 190px;
+
+    background-color: $light-color;
+
+    &::before, &::after {
+      position: absolute;
+      display: block;
+      content: '';
+    }
+
+    &::before {
+      top: -7px;
+      right: -14px;
+
+      height: 100%;
+      width: 14px;
+      background: $color-3;
+
+      transform: skewY(-45deg);
+    }
+
+    &::after {
+      top: -14px;
+      left: 7px;
+
+      height: 14px;
+      width: 100%;
+      background: $color-3;
+
+      transform: skewX(-45deg);
+    }
+  }
+
+  .skill__icon {
+    display: block;
+    height: 136px;
+  }
+  .skill__icon--dev {}
+  .skill__icon--design {}
+  .skill__icon--responsive {}
+  .skill__icon--ideas {}
+  .skill__icon--communication {}
+
+  .skill__title {
+    margin-top: 24px;
+    margin-bottom: 8px;
+
+    color: $dark-color;
+
+    font-family: Montserrat, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .skill__desc {
+    width: 222px;
+
+    color: $dark-color;
+
+    font-family: Lato, sans-serif;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+  }
+
+.skill-wizard {
+  position: absolute;
+  top: -94px;
+  left: 25px;
+  z-index: 5;
+
+  width: 60px;
+  height: 90px;
+
+  background-image: url("../../images/jump1.png");
+
+  animation: skill-wizard 0.75s steps(3) infinite alternate,
+             skill-wizard-jump 0.75s infinite alternate;
+}
+.skill-wizard--reversed {
+  transform: scaleX(-1);
+  left: auto;
+  right: 20px;
+  background-image: url("../../images/jump2.png");
+}
+.skill-wizard--delayed {
+  animation-delay: 0.75s;
+}
+
+@keyframes skill-wizard {
+  100% {background-position: -180px;}
+}
+@keyframes skill-wizard-jump {
+  80% {top: -94px;}
+  100% {top: -124px;}
+}
